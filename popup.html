@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Scroll Controller</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Voice Scroll Controller</h1>
+    
+    <div class="status-container">
+      <div class="status-indicator" id="status-indicator"></div>
+      <span id="status-text">Initializing...</span>
+    </div>
+    
+    <div class="button-container">
+      <button id="toggle-recognition" class="primary-button">Start Listening</button>
+    </div>
+    
+    <div class="settings-container">
+      <h2>Settings</h2>
+      
+      <div class="setting-row">
+        <label for="auto-start">Auto-start on browser launch:</label>
+        <input type="checkbox" id="auto-start">
+      </div>
+      
+      <div class="setting-row">
+        <label for="sensitivity">Scroll Sensitivity:</label>
+        <select id="sensitivity">
+          <option value="high">High (Small Scrolls)</option>
+          <option value="medium" selected>Medium</option>
+          <option value="low">Low (Large Scrolls)</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="commands-container">
+      <h2>Available Commands</h2>
+      <ul class="commands-list">
+        <li><strong>Up</strong> - Scroll up</li>
+        <li><strong>Down</strong> - Scroll down</li>
+        <li><strong>Page Up</strong> - Scroll up one page</li>
+        <li><strong>Page Down</strong> - Scroll down one page</li>
+        <li><strong>Top</strong> - Go to top of page</li>
+        <li><strong>Bottom</strong> - Go to bottom of page</li>
+      </ul>
+    </div>
+    
+    <div class="footer">
+      <p>Click outside this popup to continue browsing</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    width: 320px;
+    padding: 16px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 16px;
+    color: #2c3e50;
+    margin: 12px 0 8px 0;
+    font-weight: 500;
+  }
+  
+  .status-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+  }
+  
+  .status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ccc;
+  }
+  
+  .status-indicator.active {
+    background-color: #2ecc71;
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+  }
+  
+  .status-indicator.inactive {
+    background-color: #e74c3c;
+  }
+  
+  #status-text {
+    font-size: 14px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .primary-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  
+  .primary-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .primary-button.active {
+    background-color: #e74c3c;
+  }
+  
+  .primary-button.active:hover {
+    background-color: #c0392b;
+  }
+  
+  .settings-container {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  select, input[type="checkbox"] {
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .commands-container {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+  }
+  
+  .commands-list {
+    list-style-type: none;
+    padding-left: 8px;
+  }
+  
+  .commands-list li {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  
+  .footer {
+    margin-top: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
