@@ -1,54 +1,88 @@
-# SpeechtoMove
+# 🎤 SpeechtoMove — Voice Scroll Controller
 
-This is a browser extension which lets you scroll webpages using voice commands.
+Effortlessly scroll any webpage using **voice commands**!  
+Unlock hands-free browsing for accessibility, productivity, and convenience.
 
-## Overview
-
-SpeechtoMove (Voice Scroll Controller) is a browser extension designed to improve web accessibility and convenience. By leveraging voice commands, users can effortlessly scroll through webpages hands-free.
-
-## Features
-
-- Voice-based scrolling of webpages.
-- Supports commands like "up", "down", "top", "bottom", "page up", and "page down".
-- Works on regular webpages and PDF viewers.
-- Easy-to-use interface with status notifications.
-
-## Getting Started
-
-1. **Download or clone this repository.**
-
-2. **Install the extension in your browser:**
-   - Open your browser’s extensions page (e.g., `chrome://extensions` in Chrome).
-   - Enable "Developer mode".
-   - Click "Load unpacked" and select the folder where you saved this repository.
-
-3. **Permissions:**
-   - The extension requires permissions for reading active tabs and all URLs to enable scrolling control everywhere.
-
-4. **First-time setup:**
-   - On installation, default settings are saved (auto start is off, sensitivity is set to medium).
-
-## Usage
-
-1. **Activate the extension:**
-   - Click the extension icon in your browser toolbar to open the popup.
-
-2. **Start voice recognition:**
-   - Use the popup to start or stop voice recognition.
-   - When activated, speak commands such as:
-     - "up"
-     - "down"
-     - "top"
-     - "bottom"
-     - "page up"
-     - "page down"
-
-3. **Status:**
-   - The extension will display status messages like "Voice recognition started" or "stopped".
-
-4. **PDF support:**
-   - The extension also detects and scrolls within many embedded PDF viewers.
+![Extension Banner](https://raw.githubusercontent.com/ARYANJATHAR/SpeechtoMove/main/icon128.png)
 
 ---
 
-For more details, see the source code or [view more files and documentation](https://github.com/ARYANJATHAR/SpeechtoMove).
+## 🚀 Features
+
+- 🎙️ **Voice-controlled scrolling** — Just say "up", "down", "top", "bottom", "page up", or "page down"
+- 📝 **Works on PDFs** — Detects and scrolls within most embedded PDF viewers
+- 💡 **Simple to use** — Clean interface and instant status notifications
+- 🌐 **Universal** — Supports all websites and tabs
+
+---
+
+## 🛠️ Getting Started
+
+### 1. **Install the Extension**
+
+1. **Download or clone** this repository:
+   ```bash
+   git clone https://github.com/ARYANJATHAR/SpeechtoMove.git
+   ```
+2. Open your browser’s extensions page:  
+   - **Chrome:** `chrome://extensions/`
+   - **Edge:** `edge://extensions/`
+3. **Enable Developer mode**
+4. Click **Load unpacked** and select the `SpeechtoMove` folder
+
+### 2. **Permissions**
+
+The extension requires:
+- `activeTab`
+- `storage`
+- `tabs`
+- Access to all URLs
+
+To enable scrolling everywhere you browse.
+
+---
+
+## 🎯 Usage
+
+1. **Click the SpeechtoMove icon** in your browser toolbar
+2. In the popup, **start voice recognition**
+3. **Speak any of these commands:**  
+   - `up`
+   - `down`
+   - `top`
+   - `bottom`
+   - `page up`
+   - `page down`
+4. **Watch the page scroll** based on your voice!
+
+> **PDF Support:**  
+> The extension auto-detects many PDF viewers and scrolls their content as well.
+
+> **Status messages** will appear to confirm when recognition starts or stops.
+
+---
+
+## 📂 Project Structure
+
+```
+SpeechtoMove/
+├── background.js       # Handles communication and recognition states
+├── content.js          # Injected, listens for and executes scroll commands
+├── popup.html          # UI for starting/stopping recognition
+├── manifest.json       # Extension metadata and permissions
+├── icon16.png, ...
+```
+
+---
+
+## 📣 Feedback
+
+Have an idea? Found a bug?  
+[Open an issue](https://github.com/ARYANJATHAR/SpeechtoMove/issues) or star ⭐ the repo if you find it useful!
+
+---
+
+<p align="center">
+  <b>Enhance your browsing experience with your voice!</b><br>
+  <a href="https://github.com/ARYANJATHAR/SpeechtoMove">ARYANJATHAR/SpeechtoMove</a>
+</p>
