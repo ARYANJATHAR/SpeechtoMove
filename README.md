@@ -3,7 +3,6 @@
 Effortlessly scroll any webpage using **voice commands**!  
 Unlock hands-free browsing for accessibility, productivity, and convenience.
 
-![Extension Banner](https://raw.githubusercontent.com/ARYANJATHAR/SpeechtoMove/main/icon128.png)
 
 ---
 
